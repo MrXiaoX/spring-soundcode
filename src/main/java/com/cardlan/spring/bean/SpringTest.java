@@ -27,6 +27,13 @@ public class SpringTest {
             System.out.println(beanDefinitionName);
         }
 
+        Object colorFactoryBean1 = applicationContext.getBean("colorFactoryBean");
+        Object colorFactoryBean2 = applicationContext.getBean("&colorFactoryBean");
+
+        System.out.println("\n"+colorFactoryBean1);
+        System.out.println("\n"+colorFactoryBean2);
+        System.out.println(colorFactoryBean1==colorFactoryBean2);
+
 //        Object bean1 = applicationContext.getBean("person");
 //        Object bean2 = applicationContext.getBean("person");
 //        System.out.println(bean1==bean2);

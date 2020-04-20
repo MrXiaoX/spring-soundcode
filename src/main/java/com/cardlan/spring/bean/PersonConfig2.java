@@ -41,6 +41,11 @@ public class PersonConfig2 {
         return new Person("Linux",63);
     }
 
+    @Bean
+    public ColorFactoryBean colorFactoryBean(){
+        return new ColorFactoryBean();
+    }
+
     /**
      *
      * 给容器中添加注解
