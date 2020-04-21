@@ -1,5 +1,7 @@
-package com.cardlan.spring.bean;
+package com.cardlan.spring.config;
 
+import com.cardlan.spring.bean.MyTypeFilter;
+import com.cardlan.spring.bean.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

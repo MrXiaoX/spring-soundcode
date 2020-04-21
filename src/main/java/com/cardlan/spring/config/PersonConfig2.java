@@ -1,5 +1,6 @@
-package com.cardlan.spring.bean;
+package com.cardlan.spring.config;
 
+import com.cardlan.spring.bean.*;
 import com.cardlan.spring.condition.LinuxCondition;
 import com.cardlan.spring.condition.WindowsCondition;
 import org.springframework.context.annotation.*;
@@ -7,7 +8,7 @@ import org.springframework.context.annotation.*;
 //当满足这个条件，这类中所有的bean才生效
 //@Conditional({WindowsCondition.class})
 @Configuration
-@Import({Color.class,MyImporSelector.class,MyImportBeanDefinitionRegistrar.class})//导入组件，id为全类名称
+@Import({Color.class, MyImporSelector.class, MyImportBeanDefinitionRegistrar.class})//导入组件，id为全类名称
 public class PersonConfig2 {
 
 
@@ -56,6 +57,8 @@ public class PersonConfig2 {
      *   2.@ImportSelector:返回需要导入的组件和全类名数组
      *   3.@ImportBeanDefinitionRegistrar:手动注册到bean容器中
      * 4)使用Spring提供FactoryBean(工厂bean)
+     *   1.默认获取是工厂bean调用getObject创建的对象
+     *   2.要获取工厂bean本身，我们需要个id前加一个&符合
      */
 }
 
