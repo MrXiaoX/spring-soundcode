@@ -36,6 +36,9 @@ import org.springframework.context.annotation.Configuration;
  *       postProcessBeforeInitialization:在初始化之前工作
  *      postProcessAfterInitialization :在初始化之后工作
  *
+ *  Spring底层对BeanPostProcessor的使用
+ *      bean赋值，注入其他组件，@Autowired 生命周期注解功能
+ *
  */
 
 @Configuration

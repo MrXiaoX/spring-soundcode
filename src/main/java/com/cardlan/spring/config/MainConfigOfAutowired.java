@@ -39,7 +39,7 @@ public class MainConfigOfAutowired
     @Bean("helloDao2")
     public HelloDao helloDao(){
         HelloDao helloDao = new HelloDao();
-        helloDao.setAble(2);
+//        helloDao.setAble(2);
         return helloDao;
     }
 

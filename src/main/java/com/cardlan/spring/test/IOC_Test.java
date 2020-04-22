@@ -1,5 +1,6 @@
-package com.cardlan.spring.bean;
+package com.cardlan.spring.test;
 
+import com.cardlan.spring.bean.Person;
 import com.cardlan.spring.config.MainConfigOfPeropertyValues;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
