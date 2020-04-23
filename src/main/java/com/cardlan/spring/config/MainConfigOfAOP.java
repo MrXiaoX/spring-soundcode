@@ -31,6 +31,13 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  *   1)、将业务逻辑组件和切面类都加入到容器中，告诉Spring哪个是切面类(@Aspect)
  *   2)、在切面类上的每一个通知方法上标通知注解:告诉Spring何时何地运行切入点表达式()
  *   3)、开启基于注解AOP模块式：@EnableAspectJAutoProxy
+ *
+ *  AOP原理:
+ *        @EnableAspectJAutoProxy
+ *  1、@EnableAspectJAutoProxy
+ *      @Import(AspectJAutoProxyRegistrar.class) 给容器导入AspectJAutoProxyRegistrar.class组件
+ *      利用
+ *      internalConfigurationAnnotationProcessor
  */
 
 @EnableAspectJAutoProxy
